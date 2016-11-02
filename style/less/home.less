@@ -1,0 +1,59 @@
+@import "variables.less";
+@import "mixins.less";
+
+.txt-center {
+	text-align: center;
+}
+
+// --<Heading>>
+.navbar-default {
+	padding:10px;
+	border-radius: 0px;
+	background-color: rgba(255, 255, 255, 0.75);
+	border-bottom: 2px solid fade(@brandGrey, 75%);
+
+	.navbar-nav > li > a {color:@brandGrey;
+		font-weight: bold;
+		border-left: 1px solid @lightGrey;
+	 }
+}
+
+.navbar-brand {
+	padding: 0; 
+	img {
+		max-height: 50px; 
+		width: auto;}
+}
+
+// --<<Home Page>>
+
+h1 {
+	.heads;
+	font-size: 30px;
+	color: white;
+}
+
+h2 {
+	.heads;
+	font-size: 26px;
+	color: @brandGrey;
+}
+
+h4 {
+	.title;
+	color: @brandGrey;
+	font-size: @1stFontSize+2px;
+	margin: 10px;
+}
+
+.btn-primary.btn-lg {
+	.button-lg;
+		&.blue {background-color: fade(@brandBlue, 90%); color: white;}
+		&.white {background-color: fade(white, 90%); color: @brandBlue;}
+		&.turquesa {background-color: fade(@turquesa, 90%); color: white;}
+}
+
+.icon {
+	max-height: 80px;
+	max-width: 80px;
+}
