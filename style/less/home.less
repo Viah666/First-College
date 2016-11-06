@@ -5,6 +5,9 @@
 	text-align: center;
 }
 
+.margin-top-40 {
+	.margin-top-40;}
+
 // --<Heading>>
 .navbar-default {
 	padding:10px;
@@ -31,12 +34,22 @@ h1 {
 	.heads;
 	font-size: 30px;
 	color: white;
+	&.homepg {margin-top: 5%;
+		@media(min-width:912px) {margin-top: 10%;}
+	}
 }
 
 h2 {
 	.heads;
 	font-size: 26px;
 	color: @brandGrey;
+}
+
+h3 {
+	.title; 
+	color: white;
+	font-size: 3em;
+	margin: 10px;
 }
 
 h4 {
@@ -46,6 +59,11 @@ h4 {
 	margin: 10px;
 }
 
+a {
+	.link;
+	color: white;
+	font-weight: bold;
+}
 .btn-primary.btn-lg {
 	.button-lg;
 		&.blue {background-color: fade(@brandBlue, 90%); color: white;}
@@ -54,6 +72,94 @@ h4 {
 }
 
 .icon {
-	max-height: 80px;
-	max-width: 80px;
+	.icon;}
+.sm-icon {
+	.sm-icon;
+}
+.lg-icon {
+	.lg-icon;
+	&.img-circle {
+		position: relative;
+		z-index: 1;}
+}
+
+.home-background {
+	margin-top: -450px;
+	position: relative;
+	z-index: -1;
+	padding:0px;
+	@media(min-width:912px) {margin-top: -580px; max-height: 650px;}
+	> img { width: 100%;
+			min-width: 768px;
+			height: auto;}
+			// @media(min-width:912px) {max-height: 680px;}}
+}
+
+.fc-adventage {
+	.inner-container;
+	padding:0 15px;
+	margin-top: 40px;
+	background-color: white;
+	@media(min-width:992px) {padding-left: 15%;}
+	.part1 { padding-left: 5%; padding-right: 2.5%;
+		@media(max-width:992) {padding-right: 100px;}}
+	.course { margin-top: 40px;
+		background-image: url(../../icons/bg-color.jpg);
+		background-size: 280px 250px;
+		background-repeat: no-repeat;
+		.sm-icon { margin-left: 20px}
+	}
+	h3 { padding: 20px 0 0 10px;
+		font-size: 36px;}
+}
+
+.padding-bottom-40 {padding-bottom: 40%;}
+.news {
+	.inner-container;
+	background-color: @lightGrey;
+	.border {
+		border-right: 3px solid @brandBlue;
+	}
+}
+
+.student {
+	text-align: center;
+	padding: 40px 3%;
+	.txt-block {
+		background-color: @lightGrey;
+		border-radius: 15px;
+		padding: 60px 20px 20px 20px;
+		margin-top: -50px;
+		height: 400px;
+		overflow-y: hidden;
+		@media(max-width:768px) {height: auto;}
+		h4, a {color: @brandBlue;}
+	}
+}
+
+.margin-top-40 .row {
+	@media(min-width:1024px) {margin-left: 8%; margin-right: 8%;}
+}
+
+.feature {
+	max-width: 912px;
+	img {.image-bg;
+		width: 100%}
+	.col-xs-6 {height: 285px;
+		overflow: hidden;
+		padding: 0;
+		border: 2.5px solid white;
+		@media(max-width:992px) {height: 225px;}
+	}
+	.color-block {background-color: #7182b3;
+		color: white;
+		h3 {font-size: 40px; 
+			margin:20px;
+			@media(max-width:992px) {font-size: 26px;}}
+		p {margin:25px;}
+		&.grey {background-color: darken(@lightGrey, 5%);
+			color: @brandGrey;
+			h3 {color: @brandGrey;}
+			}
+	}
 }
